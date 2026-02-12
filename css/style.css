@@ -1,0 +1,32 @@
+/* Custom Styles for nuances not covered by Tailwind utilities */
+.hero-bg {
+    background-image: linear-gradient(rgba(0, 30, 60, 0.85), rgba(0, 30, 60, 0.7)), url('https://images.unsplash.com/photo-1565439396696-6515f5c02b9f?q=80&w=2070&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.machine-card:hover .icon-wrapper {
+    background-color: #D32F2F;
+    color: white;
+    transform: scale(1.1);
+}
+
+.nav-link {
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: #D32F2F;
+    transition: width 0.3s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
